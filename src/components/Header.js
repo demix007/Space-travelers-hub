@@ -1,19 +1,22 @@
-import React from "react";
-import logo from "../assets/planet.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/planet.png';
+import '../styles/header.css';
 
-const Header = ()=>{
-    return(
-    <nav>
-        <div className="logoTitle"><img src={logo} />
-            <h1>Space Travelers Hub</h1>
-        </div>
-        <div className="navLinks">
-            <Link to="/">Rockects</Link>
-            <Link to="/">Missions</Link> |
-            <Link to="/categories">My Profile</Link>
-        </div>
-    </nav>
-    );
-}
+const Header = () => (
+  <nav>
+    <div className="logoTitle">
+      <img src={logo} alt="space-traveler-logo" />
+      <h1>Space Travelers Hub</h1>
+    </div>
+    <div className="navLinks">
+      <Link to="/" className="links">Rockects</Link>
+      <Link to="/" className="links">Missions</Link>
+      {' '}
+      |
+      <Link to="/categories" className="links">My Profile</Link>
+    </div>
+  </nav>
+);
 
 export default Header;

@@ -1,7 +1,8 @@
 import './App.css';
-import {BrowserRouter as Router,
+import {
+  BrowserRouter as Router,
   Routes,
-  Route
+  Route,
 
 } from 'react-router-dom';
 import Header from './components/Header';
@@ -9,9 +10,9 @@ import Header from './components/Header';
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Routes>
-        
+        <Route />
       </Routes>
     </Router>
   );
