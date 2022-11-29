@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Form, Link } from 'react-router-dom';
 import logo from '../assets/planet.png';
 import '../styles/header.css';
 
@@ -14,7 +14,7 @@ const Header = () => (
       <Link to="/" className="links">Missions</Link>
       {' '}
       |
-      <Link to="/categories" className="links">My Profile</Link>
+      <Link to="/myProfile" className="links">My Profile</Link>
     </div>
   </nav>
 );
