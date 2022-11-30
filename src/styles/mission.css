@@ -1,0 +1,25 @@
+table {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+table td {
+  padding: 52px;
+}
+
+table tr {
+  padding: 52px;
+}
+
+tr:nth-child(1) {
+  font-weight: 900;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(248, 243, 243);
+}
+
+.t-data {
+  padding: 52px;
+}

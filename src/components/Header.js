@@ -12,6 +12,7 @@ const Header = () => (
     <div className="navLinks">
       <Link to="/" className="links active-link">Rockects</Link>
       <Link to="/" className="links">Missions</Link>
+      <Link to="/missions" className="links">Missions</Link>
       {' '}
       |
       <Link to="/myProfile" className="links">My Profile</Link>
