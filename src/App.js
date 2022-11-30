@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header';
 import Myprofile from './components/Myprofile';
+import Mission from './components/Mission';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/myProfile" element={<Myprofile />} />
+        <Route path="/missions" element={<Mission />} />
       </Routes>
     </Router>
   );
