@@ -25,8 +25,6 @@ const Missions = () => {
               key={mission.id}
               missionName={mission.mission_name}
               description={mission.description}
-              missionStatus={mission.missionStatus}
-              missionSubscription={mission.missionSubscription}
             />
           ))
         }
