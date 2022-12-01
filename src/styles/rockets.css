@@ -1,6 +1,9 @@
 .rockets-container {
   margin: 15px;
   padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .rocket-card {
@@ -9,9 +12,7 @@
 }
 
 .rocket-img {
-  width: 350px;
-  height: 150px;
-  border: 1px solid gray;
+  max-width: 250px;
 }
 
 .rocket-desc {
@@ -21,7 +22,7 @@
 }
 
 .reserve-btn {
-  max-width: 15%;
+  width: 140px;
   padding: 10px;
   background-color: #3477eb;
   color: white;
