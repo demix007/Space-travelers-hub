@@ -8,7 +8,7 @@ import {
 import Header from './components/Header';
 import Myprofile from './components/Myprofile';
 import Rockets from './components/Rockets/Rockets';
-import Mission from './components/Mission';
+import Mission from './components/Missions/Mission';
 
 function App() {
   return (
