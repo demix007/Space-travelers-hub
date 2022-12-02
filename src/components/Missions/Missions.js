@@ -19,7 +19,14 @@ const Missions = () => {
   if (missionsArr.length > 0) {
     return (
       <div className="missions-container">
-        {
+        <table>
+          <tr className="t-row">
+            <td>Name</td>
+            <td>Description</td>
+            <td>Status</td>
+            <td />
+          </tr>
+          {
           missionsArr.map((mission) => (
             <Mission
               key={mission.mission_id}
@@ -28,6 +35,7 @@ const Missions = () => {
             />
           ))
         }
+        </table>
       </div>
     );
   }
