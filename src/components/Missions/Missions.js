@@ -22,7 +22,7 @@ const Missions = () => {
         {
           missionsArr.map((mission) => (
             <Mission
-              key={mission.id}
+              key={mission.mission_id}
               missionName={mission.mission_name}
               description={mission.description}
             />

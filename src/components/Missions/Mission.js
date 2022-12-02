@@ -7,23 +7,24 @@ const Mission = (props) => {
     missionName, description,
   } = props;
   return (
-    <table>
-      <tr className="t-row">
-        <td>Name</td>
-        <td>Description</td>
-        {' '}
-        <td>Status</td>
-        <td>Mission</td>
-      </tr>
-
-      <tr className="t-row">
-        <td>{missionName}</td>
-        <td>{description}</td>
-        {' '}
-        <td>{}</td>
-        <td>{}</td>
-      </tr>
-    </table>
+    <div>
+      <table>
+        <tr className="t-row">
+          <td>Name</td>
+          <td>Description</td>
+          {' '}
+          <td>Status</td>
+          <td />
+        </tr>
+        <tr className="t-row">
+          <td>{missionName}</td>
+          <td>{description}</td>
+          {' '}
+          <td><button type="button">NOT A MEMBER</button></td>
+          <td><button type="button">Join Mission</button></td>
+        </tr>
+      </table>
+    </div>
   );
 };
 
