@@ -29,6 +29,7 @@ const RocketCard = (props) => {
           reserved ? (
             <button
               type="button"
+              className="cancel-btn"
               onClick={() => {
                 dispatch(cancelReservation(rocketId));
               }}
