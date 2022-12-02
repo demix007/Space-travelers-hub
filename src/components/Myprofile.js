@@ -4,6 +4,7 @@ const Myprofile = () => (
   <div>
     <p>My Missions</p>
     <p>My Rockects</p>
+    <p>My Dragons</p>
   </div>
 );
 
