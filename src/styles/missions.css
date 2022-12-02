@@ -35,10 +35,10 @@ tr:nth-child(even) {
 }
 
 .active-member {
-background-color: teal;
-color: white;
-border-radius: 3px;
-width: 100%;
+  background-color: teal;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
 }
 
 .leave-mission {
@@ -48,8 +48,9 @@ width: 100%;
 }
 
 .mission-status {
-  width:20%;
+  width: 20%;
 }
+
 .mission-action {
-  width:20%;
+  width: 20%;
 }
