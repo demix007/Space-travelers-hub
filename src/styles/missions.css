@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 table {
-  width: 70%;
+  width: 90%;
   margin: auto;
   margin-top: 50px;
 }
@@ -22,4 +26,30 @@ tr:nth-child(even) {
 
 .t-data {
   padding: 52px;
+}
+
+.not-a-member {
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+}
+
+.active-member {
+background-color: teal;
+color: white;
+border-radius: 3px;
+width: 100%;
+}
+
+.leave-mission {
+  border: solid 1px red;
+  color: red;
+  border-radius: 3px;
+}
+
+.mission-status {
+  width:20%;
+}
+.mission-action {
+  width:20%;
 }
