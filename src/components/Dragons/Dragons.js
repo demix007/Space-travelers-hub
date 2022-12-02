@@ -16,7 +16,6 @@ const Dragons = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const dragonsArr = useSelector((state) => state.dragons);
-  console.log(dragonsArr);
   if (dragonsArr.length > 0) {
     return (
       <div className="dragons-container">
