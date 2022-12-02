@@ -21,15 +21,15 @@
   gap: 15px;
 }
 
-.reserve-badge{
+.reserve-badge {
   background-color: rgb(66, 184, 172);
   color: white;
   padding: 2px 8px;
   text-align: center;
   border-radius: 5px;
   margin-right: 10px;
-  
 }
+
 .reserve-btn {
   width: 140px;
   padding: 10px;
@@ -38,11 +38,12 @@
   border-radius: 5px;
   border: none;
 }
-.cancel-btn{
+
+.cancel-btn {
   width: 150px;
   padding: 10px;
   background-color: ghostwhite;
   color: gray;
   border-radius: 5px;
-  border: 1px solid grey
+  border: 1px solid grey;
 }
