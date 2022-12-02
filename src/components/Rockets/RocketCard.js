@@ -7,7 +7,7 @@ import { cancelReservation, reserveRocket } from '../../redux/rockets';
 const RocketCard = (props) => {
   const dispatch = useDispatch();
   const {
-    rocketName, description, rocketImg, rocketId,
+    rocketName, description, rocketImg, rocketId, reserved,
   } = props;
   return (
     <div className="rocket-card">
@@ -18,26 +18,36 @@ const RocketCard = (props) => {
         <h3 className="rocket-name">
           {rocketName}
         </h3>
+
         <p>
+          {reserved && (
+          <span className="reserve-badge">Reserved</span>
+          )}
           {description}
         </p>
-        <button
-          type="button"
-          className="reserve-btn"
-          onClick={() => {
-            dispatch(reserveRocket(rocketId));
-          }}
-        >
-          Reserve Rocket
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            dispatch(cancelReservation(rocketId));
-          }}
-        >
-          Cancel Reseravation
-        </button>
+        {
+          reserved ? (
+            <button
+              type="button"
+              onClick={() => {
+                dispatch(cancelReservation(rocketId));
+              }}
+            >
+              Cancel Reseravation
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="reserve-btn"
+              onClick={() => {
+                dispatch(reserveRocket(rocketId));
+              }}
+            >
+              Reserve Rocket
+            </button>
+          )
+        }
+
       </div>
     </div>
   );
@@ -47,5 +57,6 @@ RocketCard.propTypes = {
   description: PropTypes.string.isRequired,
   rocketImg: PropTypes.string.isRequired,
   rocketId: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 export default RocketCard;
