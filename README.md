@@ -85,9 +85,11 @@ npx eslint .
 
 👤 **Yetemegn Lemma**
 
-- GitHub: [@githubhandle](https://github.com/yetemegn-telaye)
-- Twitter: [@twitterhandle](https://twitter.com/Yetemegn19)
-- LinkedIn: [LinkedIn](linkedin.com/in/yetemegn-lemma)
+[GitHub](https://github.com/yetemegn-telaye) | [Twitter](https://twitter.com/Yetemegn19) | [LinkedIn](linkedin.com/in/yetemegn-lemma)
+
+👤 **Chukwuma Paul Mosanya**
+
+[GitHub](https://github.com/blase147) | [Twitter](https://twitter.com/DevUmerZia) | [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya-34645388)
 
 
 
