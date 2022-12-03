@@ -1,45 +1,62 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../../styles/missions.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { joinMission, fetchMissions, cancelMission } from '../../redux/missions';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { cancelMission, joinMission } from '../../redux/missions';
 
-const Mission = () => {
-  const showMissions = useSelector((state) => state.missions);
+const Mission = (props) => {
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!showMissions.length) dispatch(fetchMissions());
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const manageMissionsJoin = (id) => {
-    dispatch(joinMission(id));
-  };
-
-  const manageMissionsLeave = (id) => {
-    dispatch(cancelMission(id));
-  };
+  const {
+    missionName, description, missionId, joined,
+  } = props;
 
   return (
     <tbody>
-      {showMissions.map((mission, index) => (
-        <tr className="missionRow" key={[index]}>
-          <td><h4>{mission.name}</h4></td>
-          <td>{mission.description}</td>
-          <td className="mission-status">
-            {(mission.joined)
-              ? <span className="active-member">Active Member</span>
-              : <span className="not-a-member">Not a Member</span>}
-          </td>
-          <td className="mission-action">
-            {(mission.joined)
-              ? <button type="button" className="leave-mission" onClick={() => manageMissionsLeave(mission.id)}>Leave Mission</button>
-              : <button type="button" className="join-mission" onClick={() => manageMissionsJoin(mission.id)}>Join Mission</button>}
-          </td>
-        </tr>
-      ))}
+      <tr className="missionRow">
+        <td><h4>{missionName}</h4></td>
+        <td>{description}</td>
+        <td id="missionStatus" className="mission-status">
+          <p>
+            {joined ? (
+              <span className="active-member">Active Member</span>
+            ) : (<span>Not a Member</span>)}
+          </p>
+        </td>
+        <td>
+
+          {
+                  joined ? (
+                    <button
+                      type="button"
+                      className="join-mission"
+                      onClick={() => {
+                        dispatch(cancelMission(missionId));
+                      }}
+
+                    >
+                      Cancel Mission
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      className="join-mission"
+                      onClick={() => {
+                        dispatch(joinMission(missionId));
+                      }}
+                    >
+                      Join Mission
+                    </button>
+                  )
+}
+        </td>
+      </tr>
     </tbody>
   );
 };
-
+Mission.propTypes = {
+  missionName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  missionId: PropTypes.string.isRequired,
+  joined: PropTypes.bool.isRequired,
+};
 export default Mission;

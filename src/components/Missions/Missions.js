@@ -32,6 +32,9 @@ const Missions = () => {
               key={mission.mission_id}
               missionName={mission.mission_name}
               description={mission.description}
+              missionId={mission.id}
+              status={mission.status}
+              joined={mission.joined}
             />
           ))
         }
