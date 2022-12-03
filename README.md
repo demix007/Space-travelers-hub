@@ -91,6 +91,9 @@ npx eslint .
 
 [GitHub](https://github.com/blase147) | [Twitter](https://twitter.com/ChukwumaMosanya) | [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya)
 
+👤 **Ayodeji Abidemi**
+
+[GitHub](https://github.com/demix007) | [Twitter](https://twitter.com/Dat_dope_demix) | [LinkedIn](http://linkedin.com/in/ayodejiabidemi)
 
 
 ## Show your support
