@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+table td {
+  padding: 52px;
+}
+
+table tr {
+  padding: 52px;
+}
+
+tr:nth-child(1) {
+  font-weight: 900;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(248, 243, 243);
+}
+
+.t-data {
+  padding: 52px;
+}
+
+.not-a-member {
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+}
+
+.active-member {
+  background-color: teal;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px;
+}
+
+.not-active {
+  background-color: gray;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px;
+}
+
+.leave-mission {
+  border: solid 1px red;
+  color: red;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.join-mission {
+  border: solid 1px grey;
+  color: grey;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.mission-status {
+  width: 20%;
+}
+
+.mission-action {
+  width: 20%;
+}

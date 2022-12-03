@@ -1,0 +1,56 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 45px;
+}
+
+.reserved-rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 30%;
+}
+
+.reserved-rockets h2 {
+  color: rgb(46, 46, 46);
+  font-weight: 500;
+}
+
+.rockets-list {
+  border-bottom: 1px solid rgb(163, 163, 163);
+  border-left: 1px solid rgb(163, 163, 163);
+  border-right: 1px solid rgb(163, 163, 163);
+}
+
+.rockets-list li {
+  list-style-type: none;
+  border-top: 1px solid rgb(163, 163, 163);
+  padding: 15px;
+}
+
+/* Dragons Stylings */
+
+.reserved-dragons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 30%;
+}
+
+.reserved-dragons h2 {
+  color: rgb(46, 46, 46);
+  font-weight: 500;
+  margin-block-end: 1rem;
+}
+
+.dragons-list {
+  border-bottom: 1px solid rgb(163, 163, 163);
+  border-left: 1px solid rgb(163, 163, 163);
+  border-right: 1px solid rgb(163, 163, 163);
+}
+
+.dragons-list li {
+  list-style-type: none;
+  border-top: 1px solid rgb(163, 163, 163);
+  padding: 15px;
+}
