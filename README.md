@@ -1,20 +1,74 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+- [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+- [👥 Authors](#authors)
+  - [🤝 Contributing](#contributing)
+  - [⭐️ Show your support](#support)
+  - [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+
 # Space-travelers-hub
-web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-## Built With
+# 🛠 Built With <a name="built-with"></a>
+ > This project was built with; 
+- HTML 
+- CSS
+- Javascript
+- React
+- Redux
+- Jest
 
-- HTML, CSS, JS
-- React, JSX, Redux
-- Gitflow
+# Tech Stack <a name="tech-stack"></a>
+> ### Technologies used 
+- GitHub 
+- Visual Studio Code 
+- GitBash
+- Webpack
+<details> 
+<summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+# Key Features <a name="key-features"></a>
+- **Makes Space Mission Reservation**
+- **Displays available Rockets, Missions and Dragons**
+- **Cancels /Leaves reservations and joined missions**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Live-Demo
+> Here is a link (https://yetemegn-telaye.github.io/Space-travelers-hub/) to the live page.
 
 
-## Live Demo
 
+# 💻 Getting Started <a name="getting-started"></a>
+> In order to use the project files, Kindly follow these steps:
 
+## Steps
+- To clone the project select the desired directory in cmd and run: `git clone https://github.com/yetemegn-telaye/Space-travelers-hub.git`
+- Install npm dependencies: `npm install`
+- To check the live preview: `npm run start`
+- For StyLint test, run: `npx stylelint "**/*.{css,scss}"`
+- For WebHint test, run: `npx hint .`
+- For EsLint test, run: `npx eslint .`
 
-### Prerequisites
-- IDE(code editor) like: **Vscode**, **Sublime**, etc. 
-- [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+## Prerequisites
+- Have basic level knowledge about HTML/CSS/JS/ES6/React/Redux
+- Have basic level knowledge about linters/Webpack
+- Have basic level knowledge about the working of website
 
 ### Setup
 1. Download the **Zip** file or clone the repo with:
@@ -96,13 +150,21 @@ npx eslint .
 [GitHub](https://github.com/demix007) | [Twitter](https://twitter.com/Dat_dope_demix) | [LinkedIn](http://linkedin.com/in/ayodejiabidemi)
 
 
-## Show your support
+## ⭐️ Show your support <a name="support"></a>
+Give a ⭐️ if you like this project!
 
-Give a ⭐ if you like this project!
+## 🙏 🙏 Acknowledgments <a name="acknowledgements"></a>
+- I would like to thank [@microverseinc](https://github.com/microverseinc) for the templates and insights 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 📝 License
+### 📝 License <a name="license"></a>
+> Copyright 2021,   [Yetemegn Lemma, Chukwuma Paul Mosanya, Ayodeji Abidemi]
 
-This project is [MIT](./MIT.md) licensed.
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this [Space Travelers Hub] and associated documentation files, to deal in the [Space Travelers Hub] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [Space Travelers Hub], and to permit persons to whom the [Space Travelers Hub] is furnished to do so, subject to the following conditions:
 
+> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [Space Travelers Hub].
 
+> THE [Space Travelers Hub] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [Space Travelers Hub] OR THE USE OR OTHER DEALINGS IN THE [Space Travelers Hub].
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

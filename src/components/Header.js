@@ -10,7 +10,7 @@ const Header = () => (
       <h1>Space Travelers Hub</h1>
     </div>
     <div className="navLinks">
-      <Link to="/" className="links active-link">Rockects</Link>
+      <Link to="/" className="links">Rockects</Link>
       <Link to="/missions" className="links">Missions</Link>
       <Link to="/dragons" className="links">Dragons</Link>
       {' '}
