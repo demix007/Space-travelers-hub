@@ -81,7 +81,7 @@ npx stylelint "\*_/_.{css,scss}"
 npx eslint .
 ```
 
-## Author
+## Authors
 
 👤 **Yetemegn Lemma**
 
