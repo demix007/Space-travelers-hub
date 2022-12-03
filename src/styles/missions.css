@@ -39,12 +39,29 @@ tr:nth-child(even) {
   color: white;
   border-radius: 3px;
   width: 100%;
+  padding: 5px;
+}
+
+.not-active {
+  background-color: gray;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px;
 }
 
 .leave-mission {
   border: solid 1px red;
   color: red;
   border-radius: 3px;
+  padding: 10px;
+}
+
+.join-mission {
+  border: solid 1px grey;
+  color: grey;
+  border-radius: 3px;
+  padding: 10px;
 }
 
 .mission-status {

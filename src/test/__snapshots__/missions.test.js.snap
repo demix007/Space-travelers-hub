@@ -18,7 +18,9 @@ Object {
             id="missionStatus"
           >
             <p>
-              <span>
+              <span
+                class="not-active"
+              >
                 Not a Member
               </span>
             </p>
@@ -49,7 +51,9 @@ Object {
           id="missionStatus"
         >
           <p>
-            <span>
+            <span
+              class="not-active"
+            >
               Not a Member
             </span>
           </p>

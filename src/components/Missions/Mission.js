@@ -19,7 +19,7 @@ const Mission = (props) => {
           <p>
             {joined ? (
               <span className="active-member">Active Member</span>
-            ) : (<span>Not a Member</span>)}
+            ) : (<span className="not-active">Not a Member</span>)}
           </p>
         </td>
         <td>
@@ -28,7 +28,7 @@ const Mission = (props) => {
                   joined ? (
                     <button
                       type="button"
-                      className="join-mission"
+                      className="leave-mission"
                       onClick={() => {
                         dispatch(cancelMission(missionId));
                       }}
