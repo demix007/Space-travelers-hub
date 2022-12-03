@@ -7,15 +7,17 @@ import { fetchDragons } from '../../redux/dragons';
 const Dragons = () => {
   const dispatch = useDispatch();
   const shouldFetch = useRef(true);
+  const dragonsArr = useSelector((state) => state.dragons);
 
   useEffect(() => {
     if (shouldFetch.current) {
-      shouldFetch.current = false;
-      dispatch(fetchDragons());
+      if (dragonsArr.length === 0) {
+        shouldFetch.current = false;
+        dispatch(fetchDragons());
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const dragonsArr = useSelector((state) => state.dragons);
   if (dragonsArr.length > 0) {
     return (
       <div className="dragons-container">
