@@ -15,6 +15,7 @@ const Rockets = () => {
       }
     }
     shouldFetch.current = true;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (rocketsArr.length > 0) {

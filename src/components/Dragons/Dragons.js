@@ -16,7 +16,6 @@ const Dragons = () => {
         dispatch(fetchDragons());
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (dragonsArr.length > 0) {
     return (
