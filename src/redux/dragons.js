@@ -8,6 +8,7 @@ const dragonsList = [
     dragon_name: 'Initial Dragon',
     type: 'Initial Dragon type.',
     flickr_images: 'https://i.imgur.com/9fWdwNv.jpg',
+    reserved: false,
   },
 ];
 
@@ -22,7 +23,24 @@ export const fetchDragons = createAsyncThunk('dragons/fetchDragons', async () =>
 const dragonSlice = createSlice({
   name: 'dragons',
   initialState: dragonsList,
-  reducers: {},
+  reducers: {
+    reserveDragon(state, action) {
+      return state.map((dragon) => {
+        if (dragon.id !== action.payload) {
+          return { ...dragon };
+        }
+        return { ...dragon, reserved: true };
+      });
+    },
+    cancelReservation(state, action) {
+      return state.map((dragon) => {
+        if (dragon.id !== action.payload) {
+          return { ...dragon };
+        }
+        return { ...dragon, reserved: false };
+      });
+    },
+  },
   extraReducers: (build) => {
     build.addCase(fetchDragons.fulfilled, (state, action) => {
       const newState = state;
@@ -32,6 +50,7 @@ const dragonSlice = createSlice({
           dragon_name: element[1].name,
           type: element[1].type,
           flickr_images: element[1].flickr_images[0],
+          reserved: false,
         });
       });
       return newState;
@@ -39,4 +58,5 @@ const dragonSlice = createSlice({
   },
 });
 
+export const { reserveDragon, cancelReservation } = dragonSlice.actions;
 export default dragonSlice.reducer;
