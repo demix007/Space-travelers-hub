@@ -1,24 +1,28 @@
 .profile-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 15px 45px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 15px 45px;
 }
-.reserved-rockets{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
+.reserved-rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.reserved-rockets h2{
-    color: rgb(46, 46, 46);
-    font-weight: 500;
+
+.reserved-rockets h2 {
+  color: rgb(46, 46, 46);
+  font-weight: 500;
 }
+
 .rockets-list {
-    border-bottom: 1px solid rgb(163, 163, 163);
-    border-left: 1px solid rgb(163, 163, 163);
-    border-right: 1px solid rgb(163, 163, 163);
+  border-bottom: 1px solid rgb(163, 163, 163);
+  border-left: 1px solid rgb(163, 163, 163);
+  border-right: 1px solid rgb(163, 163, 163);
 }
-.rockets-list li{
-    list-style-type: none;
-    border-top: 1px solid rgb(163, 163, 163);
-    padding: 15px;
+
+.rockets-list li {
+  list-style-type: none;
+  border-top: 1px solid rgb(163, 163, 163);
+  padding: 15px;
 }
