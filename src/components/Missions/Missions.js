@@ -13,7 +13,6 @@ const Missions = () => {
       shouldFetch.current = false;
       dispatch(fetchMissions());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const missionsArr = useSelector((state) => state.missions);
   if (missionsArr.length > 0) {
