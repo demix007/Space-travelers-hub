@@ -7,16 +7,14 @@ import { fetchRockets } from '../../redux/rockets';
 const Rockets = () => {
   const dispatch = useDispatch();
   const rocketsArr = useSelector((state) => state.rockets);
-  const shouldFetch = useRef(true);
-
+  const shouldFetch = useRef(false);
   useEffect(() => {
-    if (shouldFetch.current) {
+    if (shouldFetch.current || process.env.NODE_ENV !== 'development') {
       if (rocketsArr.length === 0) {
-        shouldFetch.current = false;
         dispatch(fetchRockets());
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    shouldFetch.current = true;
   }, []);
 
   if (rocketsArr.length > 0) {
