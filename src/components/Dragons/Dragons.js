@@ -26,6 +26,8 @@ const Dragons = () => {
               dragonName={dragon.dragon_name}
               type={dragon.type}
               dragonImg={dragon.flickr_images}
+              dragonId={dragon.id}
+              reserved={dragon.reserved}
             />
           ))
         }
